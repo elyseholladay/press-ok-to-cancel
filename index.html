@@ -46,216 +46,491 @@
 				</section>
 
 				<section>
+					<h5>hi, I'm</h5>
+					<h2>@elyseholladay</h2>
+				</section>
+
+
+				<section data-state="makersquare">
+					I work at MakerSquare.
+				</section>
+
+
+<!-- 				<section>
+					<ul>
+						<li>what is UX?</li>
+						<li>interactivity</li>
+						<li>language</li>
+						<li>naming conventions</li>
+						<li>modular code</li>
+						<li>performance</li>
+						<li>workflow/testing</li>
+					</ul>
+				</section> -->
+
+
+				<!-- Intro -->
+				<section>
+
+					<section>
+						<h3>how did we get here?</h3>
+						"Are you sure you want to cancel this action? Click 'OK' to cancel the current action or 'Cancel' to continue."
+						pic.twitter.com/xwnhZwfnG6
+					</section>
+
+					<section>
+						we accidentally a user experience
+						or as my mom would say, "you didn't mean NOT TO"
+					</section>
+
+					<section>
+						<h2>what is a user experience?</h2>
+						to your user it is: visuals, interactivity, context, flow state, language, consistency, speed
+					</section>
+
+					<section>
+						"I can never figure out how to shuffle! I am too stupid for this." — my yoga teacher, trying to turn on shuffle play on Spotify
+						users blame themselves, not you.
+					</section>
 					
+					<section>
+						who is responsible for it?
+						<strike>the ux designer on my team</strike>
+						<b>Everyone</b> who works on your site is responsible for the user experience
+						* if you say, "oh that is someone else's job" — or "they told me to build it that way" you are letting everyone else on your team off the hook for their part in making a good experience
+						"Especially now that responsive/mobile design is critical, more responsibility for the user’s experience will land on the shoulders of people who can code."
+					</section>
+
+					<section>
+						francis berriman: " I loathe the term “user experience designer”, because I still believe that “user experience” is just a fundamental to what you’re doing, and shouldn’t need stating. There is nothing but user experience design if you’re building products for people."
+					</section>
+
+					<section>
+						how do you get there?
+						collaboration, consistency in visuals, in naming, context of what you are building and the flow and language of those states, performance and testing, thoughtfulness
+					</section>
+				</section>
+
+				<!-- Interactivity/RWD/Design -->
+				<section>
+
+					<section>
+						<h2>"do the hard work to make it simple [for your users]"</h2>
+					</section>
+
+					<section>
+						<h2>interactivity</h2>
+						<aside class="notes">
+						* instagram upload/like in the background
+						* scroll-hijacking
+						 iOS versus WhatsApp message sending "speed"
+						* FB spinner load test
+						</aside>
+					</section>
+
+					<section>
+						Perform actions optimistically.
+						<img src="http://cdn.cultofmac.com/wp-content/uploads/2012/05/Screen-Shot-2012-05-01-at-2.51.58-PM.jpg">
+						<aside class="notes">
+							Data is sent as part of it is ready to go, and then the rest is matched up later. It’s not an ideal engineering solution, but it makes things happen lightning fast. The three takeaways from Krieger’s presentation about design philosophies in Instagram are:
+							1.Perform actions optimistically.
+							2.Adaptively pre-load content.
+							3.Move bits when no-one’s watching.
+							What we see is our photo instantly upload right when we tap the “Done” button, but Instagram is actually working in the background to get that photo up from the moment we take it. That’s smart design.
+
+							http://www.cultofmac.com/164285/the-clever-trick-instagram-uses-to-upload-photos-so-quickly/
+						</aside>
+					</section>
+
+					<section>
+						<img src="https://d262ilb51hltx0.cloudfront.net/max/640/1*-FyGAdSZNCgVwaCLFnLplA.png">
+						<img src="https://d262ilb51hltx0.cloudfront.net/max/640/1*wQ0auiAEIS0JBGUGxze5fQ.png">
+						<aside class="notes">
+							<p>Whatsapp uses a green checkmark to indicate that a message has been sent and another green check to indicate that it’s been received.
+
+What the app does brilliantly is to show you the first checkmark immediately. The message may not have been fully uploaded to the Whatsapp servers, but Whatsapp assumes it will get there and shows the user an immediate positive indicator. This makes the user feel like Whatsapp is really fast at sending messages.
+
+iMessage takes a very different approach that doesn’t create the same positive feedback loop.
+
+iMessage’s progress bar showing the message progress of the message being sent
+When a user sends an iMessage, the blue progress bar moves across the screen as the message is being sent. This sometimes takes a while depending on the user’s network connection. If they happen to be sending an image, then the progress bar will move even slower.</p>
+						</aside>
+					</section>
+
+					<section>
+						<img src="http://mercury.io/wp-content/uploads/2014/02/facebook_loading_animation.png">
+						<aside class="notes">
+						This warning pertained to a Facebook test indicating that when their users were presented with a custom loading animation in the Facebook iOS app (left) they blamed the app for the delay. But when users were shown the iOS system spinner (right), they were more likely to blame the system itself.
+							http://mercury.io/blog/the-psychology-of-waiting-loading-animations-and-facebook
+							<p>Puzzled, the airport executives undertook a more careful, on-site analysis. They found that it took passengers a minute to walk from their arrival gates to baggage claim and seven more minutes to get their bags. Roughly 88 percent of their time, in other words, was spent standing around waiting for their bags.
+
+So the airport decided on a new approach: instead of reducing wait times, it moved the arrival gates away from the main terminal and routed bags to the outermost carousel. Passengers now had to walk six times longer to get their bags. Complaints dropped to near zero.
+
+This story hints at a general principle: the experience of waiting, whether for luggage or groceries, is defined only partly by the objective length of the wait. “Often the psychology of queuing is more important than the statistics of the wait itself,” notes the M.I.T. operations researcher Richard Larson, widely considered to be the world’s foremost expert on lines. Occupied time (walking to baggage claim) feels shorter than unoccupied time (standing at the carousel). Research on queuing has shown that, on average, people overestimate how long they’ve waited in a line by about 36 percent.</p>
+						</aside>
+					</section>
+
+					<section>
+						<img src="https://d262ilb51hltx0.cloudfront.net/max/451/1*NULhhhLtw9nz3RhmbkR2Bw.png">
+						<aside class="notes">
+							<p>Pinterest uses a similar approach in their mobile app and website. But they take it a step further. They analyze the image for every post and figure out what the primary color in that image is. They store this value on their server and when the app loads the content, the transition between the colored box and the actual image is very smooth. This also gives the illusion that the images are loading faster.
+							 https://medium.com/art-of-product-design/df25276295dd
+							</p>
+						</aside>
+					</section>
+
+					<section>
+						scroll-hijacking/touch-hijacking
+						<p>Perhaps there’s a time and a place for intensely “immersive” experiences, but those experiences shouldn’t dramatically change how basic input devices operate. Rather than consuming the page, I worried I broke my trackpad and grew tired of the 3+ second delays while trying to explore each section.</p>
+						trent walton http://trentwalton.com/2013/10/23/scroll-hijacking/
+						- google maps on a mobile site - zooms
+					</section>
+
+
+					<section>
+						* how do we get to these good experiences?
+						* how did we get to the bad ones?
+					</section>
+
+					<section>
+						* did you try it yourself - not on an emulator, not thinking about bugs, but USING it?
+						* what are the flows through your app? what do you want to click on next? can you understand some of that without doing complex user testing? probably
+					</section>
+
+					<section>
+						* if you are a back end dev, think about the output of your data. this is design, too
+					</section>
+
+					<section>
+					what we asked for:
+					"User A commented on your post Post Title at 1:25pm."
+					<pre><code>
+<div class="notification">
+	<span class="notification-user">User A</span>
+	<span class="notification-text">commented on your post</span>
+	<span class="notification-item">Post Title</span>
+	<span class="notification-date">at 1:25pm</span>.
+</div>
+					</code></pre>
+
+					what's in the file that defines notification text:
+					<pre><code>
+notification:
+  - :item: "Post Title"
+    :link: [URL]
+    :text: "commented on your post"
+    :author: User A
+    :timestamp: [timestamp junk]
+					</code></pre>
+
+					what got output from the database:
+					<pre><code>
+		<%= link_to notification.link, :class=>'notification' do %>
+			<span class="icon_notification"></span>
+			<%= notification %> <!-- this right here! -->
+		<% end %> <!-- end notification -->
+					</code></pre>
+
+					what that looked like in the output HTML and app:
+					<pre><code>
+<a class="notification">User A commented on your post Post Title at 1:25pm.</a>
+					</code></pre>
+
+					<aside class="notes">
+						all one string, no way to visually identify notification title, name, date - all looks the same, harder to extract the relevant information
+						
+						not a front-end dev problem; not a matter of adding classes or CSS when there's only 1 string being output from the db
+					</aside>
+					</section>
+
+					<section>
+					<img src="file:///Users/elyse/Dropbox/notes/github/pp_1.png">
+					1. if a user didn’t see their product in the top 3 results, they searched again. They never scrolled the list that we showed them, even if their result was partially visible.
+					2. search was based on number of times the search term came up, and we couldn’t change that. So if you searched for “macbook” you would get “Macbook Case for Macbook Pro 13” and Macbook Pro 15”” rather than the actual Macbook, which might appear on page five.
+					3. bump search results based on number of reviews the product has.
+					4. time to find a product dropped to :15-:45 seconds with 1-2 search terms
+						<aside class="notes">
+							<p>Bazaarvoice Product Picker. When a user submits a review or a question, they have the option to add a product to their review. When they submitted it, it would link directly to the product and show a product image and rating. This could be adding their favorite games to a review of a console, or adding a pair of shoes they love to wear with the dress they’re reviewing. Products whose reviews had linked products had incredibly high conversion rates, but it was one of our least used features. I believed this was because it was difficult to use and never returned good results.
+
+							We set to building a prototype. We had a great UX flow, and the prototype was looking great, but we still hadn’t solved the biggest problem with the product picker: it returned absolute crap for search results.
+
+							It took 2-5 minutes using 3+ search terms to find the right product, and for every single user I tested, if they didn’t see their product in the top 3 results, they searched again. They never scrolled the list that we showed them, even if their result was partially visible. Our search was based on number of times the search term came up, and we couldn’t change that. So if you searched for “macbook” you would get “Macbook Case for Macbook Pro 13” and Macbook Pro 15”” rather than the actual Macbook, which might appear on page five.</p>
+						</aside>
+					</section>
+
 				</section>
 
 				<section>
 					
+					<section>
+						<h2>language</h2>
+						understanding CONTEXT
+					</section>
+
+					<section>
+						* you're a front-end dev... congrats, you are also a copywriter
+						* when was the last time you thought about what you wrote in an app or a mockup? is that a designer's job? does the designer provide you a list of text, of error messages or button states?
+					</section>
+
+					<section>
+						* if your UI needs instructions, you can probably improve on it. it may not be your job to come up with the new design. but you can: make a ticket, log it, go talk to someone, try to write more clear instructions, change the language of a button to be more clear so you don't NEED instructions, etc
+					</section>
+
+					<section>
+						The UX of Language
+
+						https://alexsexton.com/blog/2012/03/the-ux-of-language/
+
+						"While the data density in language increases on our sites and apps, we must consider the user who has to read those sentences. The goal is to offer interesting data to the user without just generating a table and without sounding like Borat writes the copy. You can spend as much time as you’d like on the interaction and visual design, but if your app doesn’t have a good flow, you’re leaving the most important cards on the table: the content."
+					</section>
+
+					<section>
+						Number of Results: 15
+
+						in Number of Categories: 3
+
+						This is the type of language that we’ve all come to expect out of the web. It gets the point across, but I’d argue that it’s not very personal or natural. That may not matter in this particular example, but consider building anything social. Identity is becoming a huge part of the next wave of apps. If you want to have any chance at personalization or identity, then the following isn’t going to cut it:
+
+						Alex added 5 friend(s) to their group on March 19, 2012
+					</section>
+
+
+					<section>
+						There are 8 results in 2 categories.
+
+						<pre>
+							<code>
+								if ( ResCount !== 1 && CatCount !== 1 ) {
+  return "There are " + ResCount + " results in " + CatCount + " categories.";
+}
+else if ( ResCount === 1 && CatCount !== 1 ) {
+  return "There is one result in " + CatCount + " categories.";
+}
+else if ( ResCount !== 1 && CatCount === 1 ) {
+  return "There are " + ResCount + " results in one category.";
+}
+else if ( ResCount === 1 && CatCount === 1 ) {
+  return "There is one result in one category.";
+}
+							</code>
+						</pre>
+
+						You can imagine that when gender is added to this sentence, things explode even further.
+
+						Alex searched for an image. He found 5 results in one category.
+
+						Now we have to multiply that logic times the number of gender choices. Most specs have 3 gender choices: “male”, “female”, and “other”. “Other” specifically is treated “as if you cannot determine the gender of someone who is far away from you.” In the case of this simple sentence, we’d need twelve copies of the sentence – one for each combination of gender and plural form of the nouns.
+
+
+					</section>
+
+					<section>
+						* "Are you sure you want to cancel this action? Click 'OK' to cancel the current action or 'Cancel' to continue." - we laugh but someone wrote that. and it probably made sense in some way where some buttons were primary, there had to be a secondary action... some developer told them the primary button should always be "OK" instead of "Continue" or something because it's friendlier language.. but it doesnt make sense in the end.
+					</section>
+
+					<section>
+						If you can go through your app and find any sentence that you’d write differently if it wasn’t generated by a computer, you are reducing the effectiveness of that text and degrading the overall experience.
+					</section>
+
+					<section>
+						* i wonder what the HTML/CSS of those buttons are. what are the classnames? for the devs who were looking at it, was it clear where the buttons would end up and what they should be in that context?
+
+					</section>
+
 				</section>
 
+				<!-- Names and Naming Conventions -->
 				<section>
 					
+					<section>
+						<h2>Names and Naming Conventions</h2>
+					</section>
+
+					<section>
+						* class naming conventions! dash, underscore, camel, BEM
+						* pick something and stay with it
+						* js-/is- state classes
+
+					</section>
+
+					<section>
+						* human readable HTML and CSS, e.g. "button button-primary is-active" or "modal is-inactive" or "user-list is-expanded"
+
+					</section>
+
+					<section>
+						* naming partials/views to match your controller, and to match your CSS
+						* modal-common.html, modal.scss, modal-controller.rb
+						* more clear than: page-controller.rb, modals.scss, cancel-action.js (has the html in it) - names matter
+
+					</section>
+
+					<section>
+						* this is collaborative between front/back end devs and even designers. can you use the same names between things?
+
+					</section>
+
+					<section>
+						* square root - app navigator, quickpick menu, app menu, app dropdown... PICK ONE! if you don't use the same words when chatting about it, you won't name your code the same. consistency!
+					</section>
+
 				</section>
 
+				<!-- Self Documented and Modular Code -->
 				<section>
 					
+					<section>
+						<h2>Self Documented and Modular Code</h2>
+					</section>
+
+					<section>
+						* clean code with comments that is reusable means it WILL get reused, rather than "i dont know where to find that so i am going to write my own"
+						* when you have spaghetti code, it's unlikely to be commented, because we dont like to admit to our hacks
+
+					</section>
+
+					<section>
+						* what is faster: writing a new one, or finding the right thing?
+						* how do you find the right piece of code?
+
+					</section>
+
+					<section>
+						* they are first finding the code that is relevant and second making sure it is the right piece of code before deep diving in." — Florian Laplantif https://medium.com/programming-ideas-tutorial-and-experience/b73d90abc075?sf23567082=1
+					</section>
+
+					<section>
+						* The author has a clear opinion on comments. He considers every single comment written as a failure, because the code apparently isn’t expressive enough. One reason, which is hard to deny, is that comments are often badly maintained. Investing time in proper and descriptive naming in the code is a rewarding practice. Still, I think it’s fine to explain the “why” of code where code alone simply is not expressive enough to easily understand what’s going on. But the take-away here to me is that “the only truth is in the code”. — Robert C Martin's Clean Code book, summarized by https://medium.com/on-coding/a70ca8382884
+					</section>
+
+					<section>
+						* “Even if it’s technically sound, is it understandable enough for the rest of the organization to operate, troubleshoot, and extend it?” - http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/
+					</section>
+
+					<section>
+						* commenting and variable/classnames https://speakerdeck.com/roy/sass-in-the-real-world - // vs /* comments, descriptive comments about WHAT and WHY and HOW to use
+						
+						Sass:
+						<pre><code>
+							$year: 2014;
+
+							/* Some comment */
+							/*! Comment 2 */
+							/*! c #{$year} */
+
+						</code></pre>
+
+						Prod CSS:
+						<pre><code>
+							/* Comment 2 */
+							/* c 2014 */
+						</code></pre>
+					</section>
+
+					<section>
+						* "Code is self documenting most of the time assuming you name things properly. If you don’t name things properly, it’s a mess." — Florian Laplantif
+					</section>
+
+					<section>
+						* Start by renaming non-semantic elements in your HTML. This is probably the toughest, but once you start thinking about theming in terms of semantics like “nav” or “article” and less with design or grid names, you’ll make significant headway. Often we get to elements with non-semantic names by way of needing more weight in CSS selectors, and instead of cleaning our CSS and adding specificity the right way, we add unnecessary IDs and elements to our HTML. — Lara Swanson
+					</section>
 				</section>
 
+				<!-- Performance -->
 				<section>
 					
+					<section>
+						<h2>Performance</h2>
+					</section>
+
+					<section>
+						* Next, focus on curing your HTML of div-itis. Typically the cleaner your markup ends up, the smaller your CSS will be, and the easier redesigning and editing will be in the future. It saves you not just page load time, but development time too. — Lara Swanson
+					</section>
+
+					<section>
+						* 80% of response time is front end
+						* CSS blocks rendering, so you need to deal with it right away (i.e. at the top of the document, in your <head>).
+						JS blocks downloads, so you need to deal with these last to ensure that they don’t hold up anything else on the page.
+						http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/
+					</section>
+
+					<section>
+						* CSS is one of performance’s worst enemies, as outlined by Stoyan Stefanov, because of this rendering blockage. It’s also worth noting that a browser will download all CSS before it will begin rendering your page. This means that your print.css will be requested even if the browser is only rendering a page on screen. It means that any stylesheets that are only used based on a media query (e.g. <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="desktop.css">) will still be downloaded even if they aren’t needed.
+					</section>
+
+					<section>
+						* Fast page load time builds trust in your site; it yields more returning visitors, more users choosing your site over a competitor’s site, and more people trusting your brand. Users expect pages to load in two seconds, and after three seconds, up to 40% of users will abandon your site http://www.mcrinc.com/Documents/Newsletters/201110_why_web_performance_matters.pdf. - LS
+					</section>
+
+					<section>
+						* Similar results have been noted by major sites like Amazon, who found that 100 milliseconds of additional page load time decreased sales by one percent https://sites.google.com/site/glinden/Home/StanfordDataMining.2006-11-28.ppt?attredirects=0, and Google, who lost 20% of revenue and traffic due to half a second increase in page load time http://glinden.blogspot.com/2006/11/marissa-mayer-at-web-20.html. - LS
+					</section>
+
+					<section>
+						* Akamai has also reported that 75% of online shoppers who experience an issue such as freezing, crashing, taking too long to load, or having a convoluted checkout process will not buy from that site http://www.akamai.com/dl/reports/Site_Abandonment_Final_Report.pdf. — Lara Swanson
+						* http://programming.oreilly.com/2014/01/web-performance-is-user-experience.html
+					</section>
+
+					<section>
+						and back to our first topic, performance is also interactivity http://glinden.blogspot.com/2006/11/marissa-mayer-at-web-20.html
+					</section>
+
 				</section>
 
+				<!-- Workflow -->
 				<section>
-					
+
+					<section>
+						<h2>Workflow</h2>
+					</section>
+
+					<section>
+						“First do it, then do it right, then do it better. – @addyosmani”
+					</section>
+
+					<section>
+						* "I doubt anyone really wants to release a site that doesn't perform well, it's just a product of not being afforded the luxury of time and top-down pressure." https://speakerdeck.com/tkadlec/speed-matters-at-in-control-2014
+					</section>
+
+					<section>
+						* With anything added to a page, you need to be able to answer the question of “What value does this provide?” and in turn be able to determine if the value outweighs the pain. — Tim Kadlec
+					</section>
+
+					<section>
+						* again: what's faster, doing the right thing, or doing something hacky?
+						be a lazy developer
+						* if you have a dev setup that encourages and allows you to find the right code, reuse it, refactor it, comment it.. get it code reviewed.. aren't you more likely to do that? rather than write something new?
+					</section>
+										
+					<section>
+						<h3>Testing</h3>
+						aka "use. your. damn. app."
+					</section>
+
+					<section>
+						Nielsen: "You better appreciate your average customers when you have to struggle with a new and unfamiliar user interface."
+						http://www.nngroup.com/articles/try-to-be-a-test-user-sometime/
+					</section>
+
+					<section>
+						* It’s the tests that keep our code flexible, maintainable, and reusable […] Because tests enable change.
+						Robert C Martin's Clean Code book, summarized by https://medium.com/on-coding/a70ca8382884
+					</section>
+
+					<section>
+						* http://uxdesign.smashingmagazine.com/2011/10/04/improve-the-user-experience-by-tracking-errors/ tracking error messages and 404 page hits
+					</section>
+
+					<section>
+						crazyegg, eye tracking, clicks and referrers
+					</section>
+
+					<section>
+						not just perf testing and smoke tests
+					</section>
+
 				</section>
 
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
-
-				<section>
-					
-				</section>
 
 
 			</div>
@@ -276,7 +551,7 @@
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
