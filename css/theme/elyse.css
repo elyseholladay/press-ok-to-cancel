@@ -24,8 +24,8 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #237cbe;
-  background-color: #237cbe; }
+  background: #993399;
+  background-color: #993399; }
 
 .reveal {
   font-family: "PlutoSansExtraLight", sans-serif;
@@ -50,14 +50,14 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #eeeeee;
-  font-family: "PlutoSansBold", Impact, sans-serif;
-  line-height: 1em;
+  font-family: "PlutoSansExtraLight", Impact, sans-serif;
+  line-height: 1.25em;
   letter-spacing: 0;
   text-transform: uppercase;
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  text-shadow: none; }
 
 /*********************************************
  * LINKS
@@ -150,8 +150,29 @@ body {
 .reveal .slide-number {
   color: #444444; }
 
+.reveal h1 {
+  font-size: 2.75em; }
+
+.reveal h1 small {
+  vertical-align: 15px;
+  color: #d579cc; }
+
+.reveal h2 {
+  font-family: "PlutoSansRegular"; }
+
+h3.quote {
+  text-transform: none; }
+
+p.quote-source {
+  text-transform: uppercase;
+  font-size: 22px; }
+
 p.footnote {
   font-size: 24px; }
+
+.divider {
+  color: #d579cc;
+  text-transform: lowercase; }
 
 .center body {
   text-align: center; }
@@ -177,189 +198,20 @@ p.footnote {
 .red body {
   background: #f93831; }
 
-.scssfile body {
-  background: url("../../assets/sample_scss.png") no-repeat 0 -15px; }
-
-.codekit1 body {
-  background: url("../../assets/codekit1.png") no-repeat center 88%;
-  background-size: cover; }
-
-.codekit2 body {
-  background: url("../../assets/codekit2.png") no-repeat 0 100%;
-  background-size: cover; }
-
-.codekit1 .reveal h3,
-.codekit2 .reveal h3 {
-  color: #237cbe; }
-
-.typography body {
-  background: url("../../assets/typography.png") no-repeat 0 -30px; }
-
-.colorvariables body {
-  background: url("../../assets/colorvariables.png") no-repeat 0 -15px; }
-
-.fontsizes body {
-  background: url("../../assets/fontsizes.png") no-repeat 0 -15px; }
-
-.clearfix body {
-  background: url("../../assets/clearfix.png") no-repeat 0 -15px; }
-
-.clearfixremoved body {
-  background: url("../../assets/clearfixremoved.png") no-repeat 0 -15px; }
-
-.import1 body {
-  background: url("../../assets/import1.png") no-repeat 0 -15px; }
-
-.components .slides {
-  width: 100% !important;
-  height: 100% !important; }
-
-.components section {
-  top: -200px !important;
-  text-align: center; }
-
-.css3mixins body {
-  background: url("../../assets/css3mixins.png") no-repeat 0 -15px; }
-
-.import2 body {
-  background: url("../../assets/import2.png") no-repeat 0 -15px; }
-
-.import3 body {
-  background: url("../../assets/import3.png") no-repeat 0 -15px; }
-
-.digg body {
-  background: url("../../assets/digg.png") no-repeat 0 -15px; }
-
-.commenttypes body {
-  background: url("../../assets/commenttypes.png") no-repeat 0 -15px; }
-
-.comments body {
-  background: url("../../assets/comments.png") no-repeat 0 -15px; }
-
-.reveal p {
-  margin-bottom: 20px; }
-
-.sassy body {
-  background: black url("../../assets/gifs/sassy-girl.gif") no-repeat center center;
-  background-size: contain; }
-
-.introgif body {
-  background: black url("../../assets/gifs/donttouch.gif") no-repeat center center;
-  background-size: contain; }
-
-.fascinating body {
-  background: url("../../assets/gifs/fascinating.gif") no-repeat center center;
-  background-size: 100%; }
-
-.colbertuhhuh body {
-  background: url("../../assets/gifs/colbertuhhuh.gif") no-repeat center center;
-  background-size: cover; }
-
-.cookiemonster body {
-  background: url("../../assets/gifs/cookiemonster.gif") no-repeat center center;
-  background-size: cover; }
-
-.cssgif body {
-  background: url("../../assets/gifs/css.gif") no-repeat center center;
-  background-size: contain; }
-
-.meridaugh body {
-  background: url("../../assets/gifs/meridaugh.gif") no-repeat center center;
-  background-size: cover; }
-
-.orangutanomg body {
-  background: url("../../assets/gifs/orangutanomg.gif") no-repeat center center;
-  background-size: cover; }
-
-.orangutanomg body h3,
-.orangutanomg body h5 {
-  color: #237cbe; }
-
-.inception body {
-  background: url("../../assets/gifs/inception3.gif") no-repeat center center;
-  background-size: cover; }
-
-.indyswitch body {
-  background: url("../../assets/gifs/indyswitch.gif") no-repeat center center;
-  background-size: cover; }
-
-.pigtailgirl body {
-  background: url("../../assets/gifs/pigtailgirl.gif") no-repeat center center;
-  background-size: cover; }
-
-.sciencedino body {
-  background: url("../../assets/gifs/sciencedino.gif") no-repeat center center;
-  background-size: cover; }
-
-.sciencedino body h3,
-.sciencedino body h5 {
-  color: #237cbe; }
-
 .badcomputer body {
   background: url("../../assets/gifs/badcomputer.gif") no-repeat center center;
   background-size: cover; }
 
-.documentation body {
-  background: url("../../assets/gifs/squirrel.gif") no-repeat center center;
-  background-size: cover; }
+.makersquare body {
+  background: white url("../../assets/makersquare.png") no-repeat center center;
+  background-size: 75%; }
 
-.housetyping body {
-  background: url("../../assets/gifs/housetyping.gif") no-repeat center center;
-  background-size: cover; }
+.cancel-ok body {
+  background: #eee; }
+  .cancel-ok body img {
+    box-shadow: 0 0 0; }
+  .cancel-ok body h3 {
+    color: #444444; }
 
-.flamingle body {
-  background: url("../../assets/gifs/flamingle.gif") no-repeat center center;
-  background-size: cover; }
-
-.flamingle body h3 {
-  color: #237cbe; }
-
-.squareroot body {
-  background: url("../../assets/squareroot.jpg") no-repeat center center;
-  background-size: cover; }
-
-/* Example Buttons */
-.buttons body {
-  background: #fff; }
-
-.buttons .reveal section img {
-  border: 0;
-  box-shadow: none; }
-
-.buttons h2 {
-  color: #e6475b; }
-
-.button_example, .button_magic {
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
-  font: 100%/2.6 "Proxima Nova", sans-serif;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin: 0;
-  padding: .25em 1em;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none !important; }
-
-.button_example {
-  color: white;
-  background: #e6475b;
-  box-shadow: 0px 8px 0px 0px rgba(230, 71, 91, 0.25);
-  border-right: 1px solid #dc1e36;
-  border-bottom: 1px solid #dc1e36;
-  text-shadow: 0px 1px 1px #821220; }
-  .button_example:active, .button_example:hover {
-    background-color: #dc1e36; }
-
-.button_magic {
-  color: white;
-  background: #9bc33f;
-  box-shadow: 0px 8px 0px 0px rgba(155, 195, 63, 0.25);
-  border-right: 1px solid #7d9e31;
-  border-bottom: 1px solid #7d9e31;
-  text-shadow: 0px 1px 1px #3f5019; }
-  .button_magic:active, .button_magic:hover {
-    background-color: #7d9e31; }
+.productpicker body {
+  background: url("../../assets/pp_1.png") 0 -120px; }

@@ -68,7 +68,7 @@ $red: rgb(249,56,49); // e6475b
 // Background of the presentation
 // $backgroundColor: #993399;
 // $backgroundColor: rgb(104,192,170);
-$backgroundColor: $blue;
+$backgroundColor: $purple;
 
 
 
@@ -78,12 +78,13 @@ $mainFontSize: 36px;
 $mainColor: #eee;
 
 // Headings
-$headingFont: 'PlutoSansBold', Impact, sans-serif;
+$headingFont: 'PlutoSansExtraLight', Impact, sans-serif;
 $headingColor: #eee;
-$headingLineHeight: 1em;
+$headingLineHeight: 1.25em;
 $headingLetterSpacing: 0;
 $headingTextTransform: uppercase;
-$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+// $headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$headingTextShadow: none;
 $heading1TextShadow: $headingTextShadow;
 
 // Links and actions
@@ -100,8 +101,35 @@ $selectionColor: #fff;
 @import "../template/theme";
 // ---------------------------------------------
 
+.reveal h1 {
+    font-size: 2.75em;
+}
+
+.reveal h1 small {
+    vertical-align: 15px;
+    color: $lavender;
+}
+
+.reveal h2 {
+    font-family: "PlutoSansRegular";
+}
+
+h3.quote {
+    text-transform: none;
+}
+
+p.quote-source {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
 p.footnote {
-    font-size: 24px
+    font-size: 24px;
+}
+
+.divider {
+    color: $lavender;
+    text-transform: lowercase;
 }
 
 .center body {text-align: center;}
@@ -128,250 +156,24 @@ p.footnote {
     background: $red;
 }
 
-.scssfile body {
-    background: url('../../assets/sample_scss.png') no-repeat 0 -15px;
-}
-
-.codekit1 body {
-    background: url('../../assets/codekit1.png') no-repeat center 88%;
-    background-size: cover;
-}
-
-.codekit2 body {
-    background: url('../../assets/codekit2.png') no-repeat 0 100%;
-    background-size: cover;
-}
-
-    .codekit1 .reveal h3,
-    .codekit2 .reveal h3 {
-        color: $backgroundColor;
-    }
-
-.typography body {
-    background: url('../../assets/typography.png') no-repeat 0 -30px;
-}
-
-.colorvariables body {
-    background: url('../../assets/colorvariables.png') no-repeat 0 -15px;
-}
-
-.fontsizes body {
-    background: url('../../assets/fontsizes.png') no-repeat 0 -15px;
-}
-
-.clearfix body {
-    background: url('../../assets/clearfix.png') no-repeat 0 -15px;
-}
-
-.clearfixremoved body {
-    background: url('../../assets/clearfixremoved.png') no-repeat 0 -15px;
-}
-
-.import1 body {
-    background: url('../../assets/import1.png') no-repeat 0 -15px;
-}
-
-.components .slides {
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.components section {
-    top: -200px !important;
-    text-align: center;
-}
-
-.css3mixins body {
-    background: url('../../assets/css3mixins.png') no-repeat 0 -15px;
-}
-
-.import2 body {
-    background: url('../../assets/import2.png') no-repeat 0 -15px;
-}
-
-.import3 body {
-    background: url('../../assets/import3.png') no-repeat 0 -15px;
-}
-
-
-.digg body {
-    background: url('../../assets/digg.png') no-repeat 0 -15px;
-}
-
-
-.commenttypes body {
-    background: url('../../assets/commenttypes.png') no-repeat 0 -15px;
-}
-
-.comments body {
-    background: url('../../assets/comments.png') no-repeat 0 -15px;
-}
-
-.reveal p {
-    margin-bottom: 20px;
-}
-
-// GIFS!!!1
-
-.sassy body {
-    background: black url('../../assets/gifs/sassy-girl.gif') no-repeat center center;
-    background-size: contain;
-}
-
-.introgif body {
-    background: black url('../../assets/gifs/donttouch.gif') no-repeat center center;
-    background-size: contain;
-}
-
-.fascinating body {
-    background: url('../../assets/gifs/fascinating.gif') no-repeat center center;
-    background-size: 100%;
-}
-
-.colbertuhhuh body {
-    background: url('../../assets/gifs/colbertuhhuh.gif') no-repeat center center;
-    background-size: cover;
-}
-
-.cookiemonster body {
-    background: url('../../assets/gifs/cookiemonster.gif') no-repeat center center;
-    background-size: cover;
-}
-
-.cssgif body {
-    background: url('../../assets/gifs/css.gif') no-repeat center center;
-    background-size: contain;
-}
-
-.meridaugh body {
-    background: url('../../assets/gifs/meridaugh.gif') no-repeat center center;
-    background-size: cover;
-}
-
-.orangutanomg body {
-    background: url('../../assets/gifs/orangutanomg.gif') no-repeat center center;
-    background-size: cover;
-}
-
-    .orangutanomg body h3,
-    .orangutanomg body h5 {
-        color: $backgroundColor;
-    }
-
-.inception body {
-    background: url('../../assets/gifs/inception3.gif') no-repeat center center;
-    background-size: cover;
-}
-
-.indyswitch body {
-    background: url('../../assets/gifs/indyswitch.gif') no-repeat center center;
-    background-size: cover;
-}
-
-.pigtailgirl body {
-    background: url('../../assets/gifs/pigtailgirl.gif') no-repeat center center;
-    background-size: cover;
-}
-
-.sciencedino body {
-    background: url('../../assets/gifs/sciencedino.gif') no-repeat center center;
-    background-size: cover;
-}
-
-    .sciencedino body h3,
-    .sciencedino body h5 {
-        color: $backgroundColor;
-    }
 
 .badcomputer body {
     background: url('../../assets/gifs/badcomputer.gif') no-repeat center center;
     background-size: cover;
 }
 
-.documentation body {
-    background: url('../../assets/gifs/squirrel.gif') no-repeat center center;
-    background-size: cover;
+
+.makersquare body {
+    background: $white url('../../assets/makersquare.png') no-repeat center center;
+    background-size: 75%;
 }
 
-.housetyping body {
-    background: url('../../assets/gifs/housetyping.gif') no-repeat center center;
-    background-size: cover;
+.cancel-ok body {
+    background: #eee;
+    img {box-shadow: 0 0 0;}
+    h3 {color: $linkColor;}
 }
 
-.flamingle body {
-    background: url('../../assets/gifs/flamingle.gif') no-repeat center center;
-    background-size: cover;
+.productpicker body {
+    background: url("../../assets/pp_1.png") 0 -120px;
 }
-
-    .flamingle body h3 {
-        color: $backgroundColor;
-    }
-
-.squareroot body {
-    background: url('../../assets/squareroot.jpg') no-repeat center center;
-    background-size: cover;
-}
-
-
-/* Example Buttons */
-.buttons body {background: #fff;}
-.buttons .reveal section img {border: 0; box-shadow: none;}
-.buttons h2 {color: $coral;}
-
-%button {
-    box-sizing: border-box;
-    border: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: inline-block;
-    font: 100%/2.6 "Proxima Nova", sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin: 0;
-    padding: .25em 1em;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none !important;
-
-}
-
-@mixin button($text-color, $bg-color) {
-    @extend %button;
-    color: $text-color;
-    background: $bg-color;
-    box-shadow: 0px 8px 0px 0px transparentize($bg-color,.75);
-    border-right: 1px solid darken($bg-color,10%);
-    border-bottom: 1px solid darken($bg-color,10%);
-    text-shadow: 0px 1px 1px darken($bg-color,30%);
-    &:active, &:hover {
-        background-color: darken($bg-color,10%);
-    }
-}
-
-.button_example {
-    @include button($white,$coral);
-}
-
-// Magic Button!
-
-// @mixin gradient-vertical($startcolor,$endcolor) 
-//     // fallback/image non-cover color
-//     background-color: $startcolor
-//     // Safari 4+, Chrome 1-9
-//     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($startcolor), to($endcolor))
-//     // Safari 5.1+, Mobile Safari, Chrome 10+
-//     background-image: -webkit-linear-gradient(top, $startcolor, $endcolor)
-//     // Firefox 3.6+
-//     background-image: -moz-linear-gradient(top, $startcolor, $endcolor)
-//     // IE 10+
-//     background-image: -ms-linear-gradient(top, $startcolor, $endcolor)
-//     // Opera 11.10+
-//     background-image: -o-linear-gradient(top, $startcolor, $endcolor)
-
-$button_magic_color: $white;
-$button_magic_background: $green;
-
-.button_magic {
-    @include button($button_magic_color,$button_magic_background);
-}
-
