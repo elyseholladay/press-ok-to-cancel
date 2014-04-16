@@ -171,7 +171,7 @@ p.footnote {
 .cancel-ok body {
     background: #eee;
     img {box-shadow: 0 0 0;}
-    h3 {color: $linkColor;}
+    h2, h3 {color: $linkColor;}
 }
 
 .productpicker body {
