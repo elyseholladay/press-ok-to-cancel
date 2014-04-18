@@ -188,14 +188,20 @@ p.footnote {
 }
 
 .analytics body {
-    background: white url("../../assets/ga-flow.png") no-repeat top center;
+    background: white url("../../assets/ga-flow.png") no-repeat 20px center;
     background-size: 96%;
 }
 
-.modalnamedfiles body {}
+.modalnamedfiles body {
+    background: white url("../../assets/popup-css-views.png") no-repeat top center;
+}
+
+.logos body {
+    background: white url("../../assets/tools-logos.png") no-repeat top center;
+}
 
 .morecowbell body {
     background: white url("../../assets/morecowbell.png") no-repeat 0 -95px;
 }
 
-.louie 
+.louie {}
