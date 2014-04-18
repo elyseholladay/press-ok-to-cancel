@@ -132,6 +132,10 @@ p.footnote {
     text-transform: lowercase;
 }
 
+.reveal h6 {
+    color: $lavender;
+}
+
 .center body {text-align: center;}
 
 .section1 body {
@@ -177,3 +181,21 @@ p.footnote {
 .productpicker body {
     background: url("../../assets/pp_1.png") 0 -120px;
 }
+
+.referrers body {
+    background: url("../../assets/referrers.png") 0 0;
+    background-size: cover;
+}
+
+.analytics body {
+    background: white url("../../assets/ga-flow.png") no-repeat top center;
+    background-size: 96%;
+}
+
+.modalnamedfiles body {}
+
+.morecowbell body {
+    background: white url("../../assets/morecowbell.png") no-repeat 0 -95px;
+}
+
+.louie 
