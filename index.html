@@ -49,7 +49,7 @@
 					</aside>
 				</section>
 
-				<section>
+				<section data-state="section1">
 					<h5>hi, I&#8217;m</h5>
 					<h1><small>@</small>elyseholladay</h1>
 					<aside class="notes">
@@ -65,7 +65,7 @@
 				</section>
 
 				<!-- Intro -->
-				<section>
+				<section data-state="section2">
 
 					<section data-state="cancel-ok">
 						<h3>how did we get here?</h3>
@@ -82,6 +82,8 @@
 							<p>Most bad user experiences are NOT caused by evil dev teams, coding away in dark secret lairs, rubbing their hands and laughing every time someone hits "Reset" instead of "Submit" on a form—they're accidental.</p>
 						</aside>
 					</section>
+
+					<section data-state="happy-eye"></section>
 
 
 					<section data-state="center">
@@ -104,6 +106,8 @@
 						</aside>
 					</section>
 
+					<section data-state="loki-sideeye"></section>
+
 					<section>
 						<h3 class="quote">&#8220;There is nothing <em>but</em> user experience design if you’re building products for people.&#8221;</h3>
 						<p class="quote-source">Frances Berriman</p>
@@ -118,7 +122,7 @@
 				</section>
 
 				<!-- Interactivity/RWD/Design -->
-				<section>
+				<section data-state="section3">
 
 					<section>
 						<h2>Be a user, not a dev</h2>
@@ -163,6 +167,8 @@
 						</aside>
 					</section>
 
+					<section data-state="space"></section>
+
 					<section data-state="productpicker">
 					<aside class="notes">
 						<p>When I worked at Bazaarvoice, we built consumer product rating and review software. When someone submitted a review on a product, they could add related products, like a game to a review of a Wii. This feature had super-high conversion rates but was never used—and I suspect not by anyone who had built it, either.</p>
@@ -187,7 +193,7 @@
 
 				</section>
 
-				<section>
+				<section data-state="section4">
 					
 					<section>
 						<h2>Say that again?</h2>
@@ -286,10 +292,12 @@
 
 					</section>
 
+					<section data-state="car-timing"></section>
+
 				</section>
 
 				<!-- Names and Naming Conventions -->
-				<section>
+				<section data-state="section5">
 					
 					<section>
 						<h2>do the hard work <br/>to make it simple</h2>
@@ -331,7 +339,7 @@
 						<aside class="notes">
 							<p>How many of you have ever been searching for some code, and it ends up in a file like, 'show.html.erb'. So helpful! You can search, sure, but wouldn't it be easier to know what you're looking for instead?</p>
 							<p>It's important to name your views to match your controllers, and to match your CSS files that accompany them.</p>
-							<p><pre>modal-common.html.erb, modal.scss, modal-controller.rb</pre> is much more clear than <pre>page-controller.rb, modals.scss, and a cancel-action.js</pre> that has the HTML injected in it with JS.</p>
+							<p>modal-common.html.erb, modal.scss, modal-controller.rb is much more clear than page-controller.rb, modals.scss, and a cancel-action.js that has the HTML injected in it with JS.</p>
 							</p>
 						</aside>
 					</section>
@@ -364,10 +372,12 @@
 						</aside>
 					</section>
 
+					<section data-state="neverdonethosethings"></section>
+
 				</section>
 
 				<!-- Performance -->
-				<section>
+				<section data-state="section6">
 					
 					<section>
 						<h2>don't give users unoccupied time</h2>
@@ -405,6 +415,8 @@
 						
 					</section>
 
+					<section data-state="throwing-tables"></section>
+
 					<section>
 						<p>after three seconds</p>
 						<h3>up to 40% of users <br/>will abandon your site</h3>
@@ -431,6 +443,8 @@
 							<small>https://sites.google.com/site/glinden/Home/StanfordDataMining.2006-11-28.ppt?attredirects=0 - LS</small>
 						</aside>
 					</section>
+
+					<section data-state="gold"></section>
 
 					<section>
 						<h3 class="quote">"With anything added to a page, you need to be able to answer the question of “What value does this provide?” and in turn be able to determine if the value outweighs the pain."</h3>
@@ -478,11 +492,12 @@
 							<p>obviously, first, the less stuff we send down the tubes, the better. when you can replace an image with CSS, that's great; if you can use 2 weights of font instead of 6, great. Refactoring your CSS to remove unused selectors is pretty trivial when you compare it to removing a JS lib or an image, but it can still be valuable. </p>
 							<p>At Square Root I wrote our original Sass architecture; after about a year and a half, I did a pretty big refactor using Susy, removing some old CSS we didn't need, and making sure that IE didn't download any of the media query wrapped styles. I cut about 50kb out just doing that, and more for IE.</p>
 							<p>Then we split the CSS out into what the homepage needed—which was about 100kb—versus what the rest of the pages and apps needed—which was about 225kb, which we could lazy-load after everything was done. Combine that with gzip and an amazon CDN, coupled with some JS refactoring, we gained almost an entire second of load time.</p>
-							<p>Caching info?</p>
 							<small>add caching link</small>
 							<small>add chris coyier's talk</small>
 						</aside>
 					</section>
+
+					<section data-state="banana-kid"></section>
 
 					<section>
 						<h3 class="quote">"Typically the cleaner your markup ends up, the smaller your CSS will be, and the easier redesigning and editing will be in the future. It saves you not just page load time, but development time too."</h3>
@@ -509,6 +524,8 @@
                     	<p>And last but of course not least, ask yourself when you add code or files, "is this worth it?". Speed-test your pages.. and then go check it out like a user and see if it's acceptable.</p>
                     </aside>
 				</section>
+
+				<section data-state="flamingle"></section>
 
 
 

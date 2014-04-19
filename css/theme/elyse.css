@@ -155,7 +155,7 @@ body {
 
 .reveal h1 small {
   vertical-align: 15px;
-  color: #d579cc; }
+  color: rgba(255, 255, 255, 0.5); }
 
 .reveal h2 {
   font-family: "PlutoSansRegular"; }
@@ -171,35 +171,32 @@ p.footnote {
   font-size: 24px; }
 
 .divider {
-  color: #d579cc;
+  color: rgba(255, 255, 255, 0.5);
   text-transform: lowercase; }
 
 .reveal h6 {
-  color: #d579cc; }
+  color: rgba(255, 255, 255, 0.5); }
 
 .center body {
   text-align: center; }
 
 .section1 body {
-  background: #9bc33f; }
+  background-color: #9bc33f; }
 
 .section2 body {
-  background: #2ba2a6; }
+  background-color: #2ba2a6; }
 
 .section3 body {
-  background: #237cbe; }
+  background-color: #237cbe; }
 
 .section4 body {
-  background: #993399; }
+  background-color: #993399; }
 
 .section5 body {
-  background: #e6475b; }
+  background-color: #e6475b; }
 
 .section6 body {
-  background: #ff753e; }
-
-.red body {
-  background: #f93831; }
+  background-color: #ff753e; }
 
 .badcomputer body {
   background: url("../../assets/gifs/badcomputer.gif") no-repeat center center;
@@ -235,3 +232,43 @@ p.footnote {
 
 .morecowbell body {
   background: white url("../../assets/morecowbell.png") no-repeat 0 -95px; }
+
+.flamingle body {
+  background: url("../../assets/gifs/flamingle.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.gold body {
+  background: url("../../assets/gifs/gold.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.space body {
+  background: url("../../assets/gifs/space.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.badcomputer body {
+  background: url("../../assets/gifs/badcomputer.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.car-timing body {
+  background: url("../../assets/gifs/car-timing.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.throwing-tables body {
+  background: url("../../assets/gifs/throwing-tables.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.happy-eye body {
+  background: url("../../assets/gifs/happy-eye.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.loki-sideeye body {
+  background: url("../../assets/gifs/loki-sideeye.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.banana-kid body {
+  background: url("../../assets/gifs/banana-kid.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.neverdonethosethings body {
+  background: url("../../assets/gifs/never-done-those-things.gif") no-repeat center center;
+  background-size: 100%; }
