@@ -68,7 +68,7 @@ $red: rgb(249,56,49); // e6475b
 // Background of the presentation
 // $backgroundColor: #993399;
 // $backgroundColor: rgb(104,192,170);
-$backgroundColor: $purple;
+$backgroundColor: darken($purple,10%);
 
 
 
@@ -138,24 +138,24 @@ p.footnote {
 
 .center body {text-align: center;}
 
-.section1 body {
-    background-color: $green;
-}
-.section2 body {
-    background-color: $turquoise;
+.section6 body {
+    background-color: darken($green,10%);
 }
 .section3 body {
-    background-color: $blue;
+    background-color: darken($turquoise,10%);
+}
+.section2 body {
+    background-color: darken($blue,10%);
 }
 .section4 body {
-    background-color: $purple;
+    background-color: darken($purple,10%);
 }
 .section5 body {
     background-color: $coral;
 }
-.section6 body {
-    background-color: $tangerine;
-}
+// .section6 body {
+    // background-color: desaturate($tangerine,10%);
+// }
 
 .badcomputer body {
     background: url('../../assets/gifs/badcomputer.gif') no-repeat center center;

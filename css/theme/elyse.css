@@ -24,8 +24,8 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #993399;
-  background-color: #993399; }
+  background: #732673;
+  background-color: #732673; }
 
 .reveal {
   font-family: "PlutoSansExtraLight", sans-serif;
@@ -180,23 +180,20 @@ p.footnote {
 .center body {
   text-align: center; }
 
-.section1 body {
-  background-color: #9bc33f; }
-
-.section2 body {
-  background-color: #2ba2a6; }
+.section6 body {
+  background-color: #7d9e31; }
 
 .section3 body {
-  background-color: #237cbe; }
+  background-color: #217a7d; }
+
+.section2 body {
+  background-color: #1b6093; }
 
 .section4 body {
-  background-color: #993399; }
+  background-color: #732673; }
 
 .section5 body {
   background-color: #e6475b; }
-
-.section6 body {
-  background-color: #ff753e; }
 
 .badcomputer body {
   background: url("../../assets/gifs/badcomputer.gif") no-repeat center center;
